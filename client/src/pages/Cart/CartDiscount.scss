@@ -1,0 +1,65 @@
+@import '@/constants/color';
+
+.cart-discount {
+    margin: 20px 0;
+    padding: 20px 0;
+
+    width: 100%;
+    
+    h3 {
+        font-weight: 500;
+        font-size: 1.3em;
+        
+        margin-bottom: 30px;
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        & > * {
+            font-size: 1.2em;
+            padding: .5em 1em;
+            border: 1px solid rgba($color: $second, $alpha: .8);
+            transition: all .2s linear;
+        }
+
+        .primary-btn {
+            display: inline-block;
+            cursor: pointer;
+            
+            border-radius: 0 10px 10px 0;
+            
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFF;
+
+            background-color: $second;
+
+            &:hover {
+                background-color: rgba($color: $second, $alpha: .8);
+            }
+
+            &:active {
+                border-color: #FFF;
+                box-shadow: 0 0 1px 1px rgba($color: $second, $alpha: 1.0);
+            }
+        }
+    
+        input {
+            font-weight: 300;
+            display: inline-block;
+            border-radius: 10px 0 0 10px;
+            border-right: none;
+            max-width: 67%;
+
+            &:focus {
+                border-color: #d5d5d5;
+                box-shadow: 0 0 1px 1px rgba($color: $second, $alpha: 1.0);
+            }   
+        }
+    }
+
+    
+}

@@ -1,0 +1,39 @@
+@import '@/constants/color';
+
+.search-result {
+    transition: all .2s linear;
+    visibility: hidden;
+    opacity: 0;
+
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+
+    width: 100%;
+    padding: .5em 0;
+
+    background-color: #FFF;
+    border: .5px solid rgba($color: #d5d5dd, $alpha: .5);
+    border-top: 0px;
+
+    a {
+        display: block;
+        width: 100%;
+        padding: .25em .5em;
+
+        font-weight: 300;
+
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+        &:hover, &:active, &.active {
+            color: rgba($color: $second, $alpha: .7);
+        }
+    }
+
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+}

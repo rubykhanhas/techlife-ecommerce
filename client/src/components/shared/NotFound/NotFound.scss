@@ -1,0 +1,10 @@
+.not-found {
+    margin: 25px auto;
+    &__background {
+        width: 80%;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,122 @@
+
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    // 
+    min-height: 500px;
+    padding: 30px 15px;
+
+    &__text {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        // 
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: rgba($color: #000, $alpha: .8);
+
+        .category {
+            text-transform: capitalize;
+        }
+
+        .name {
+            font-size: 2em;
+            font-weight: 500;
+            color: #000;
+        }
+
+        .rating {
+            .react-stars>span {
+                font-size: 3em !important;
+            }
+
+            margin-bottom: 10px;
+        }
+
+        .short-des {
+            cursor: s-resize;
+            padding: 10px 0;
+
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: pre-wrap;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+
+            &:active,
+            &:hover {
+                overflow: unset;
+                text-overflow: unset;
+                display: block;
+            }
+        }
+    }
+
+    &__order {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .options {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+
+            .quantity-input {
+                width: 15%;
+            }
+
+            div[class*="-container"] {
+                flex-basis: 40%;
+            }
+        }
+
+        .price {
+            margin: 30px 0 15px 0;
+
+            font-size: 1.9em;
+            font-weight: 600;
+            color: #df3b3b;
+
+            &--old {
+                font-weight: 300;
+                text-decoration: line-through;
+                color: rgba($color: #000000, $alpha: .7);
+                margin-right: 30px;
+            }
+        }
+
+        .group-btn {
+            display: flex;
+            align-items: center;
+            font-size: 1.3em;
+            height: 50px;
+            width: 100%;
+
+            .btn {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+.main-info-skeleton {
+    width: 100%;
+    min-height: 500px;
+    padding: 30px 15px;
+    border-radius: 5px 5px 0 0;
+    background-color: rgba($color: #d9d9d9, $alpha: .1);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}

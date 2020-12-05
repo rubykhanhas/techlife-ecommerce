@@ -1,0 +1,11 @@
+
+.aside-info {
+    .tabline__content > div {
+        padding: 15px;
+        
+        font-weight: 300;
+        white-space: pre-wrap;
+        max-height: 150px;
+        overflow-y: auto;
+    }
+}

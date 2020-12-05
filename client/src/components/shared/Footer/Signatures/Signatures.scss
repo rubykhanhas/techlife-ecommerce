@@ -1,0 +1,55 @@
+@import '@/constants/color';
+@import '@/constants/import';
+
+.signatures {
+    display: flex;
+    flex-flow: wrap column;
+
+    @include media-breakpoint-down(sm) {
+        margin-top: 50px;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    h3 {
+        font-weight: 400;
+        margin: 1rem 0;
+    }
+
+    &__number {
+        font-size: 2.2rem;
+        letter-spacing: 2px;
+        font-weight: 500;
+        color: $second;
+        margin: 1.2rem 0;
+    }
+
+    p {
+        color: rgba($color: #000, $alpha: .6);
+    }
+
+    ul {
+        margin: 1.5em 0;
+        display: flex;
+        align-items: center;
+
+        a {
+            display: inline-block;
+            font-size: 2rem;
+            vertical-align: middle;
+            
+            padding: .25em .5em;
+            margin: 0 10px;
+            border-radius: 50%;
+
+            box-shadow: 0 0 5px .5px rgba($color: #d5d5d5, $alpha: .6);
+            transition: color .3s linear;
+
+            &:hover {
+                box-shadow: 0 0 5px 1px rgba($color: #d5d5d5, $alpha: .8);
+                color: $second;
+            }
+        }
+    }
+}

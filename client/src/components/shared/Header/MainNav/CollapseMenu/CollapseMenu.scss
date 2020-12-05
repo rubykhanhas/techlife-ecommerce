@@ -1,0 +1,62 @@
+@import '@/constants/color';
+@import '@/constants/import';
+
+.ReactCollapse--collapse {
+    
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+
+    transition: height 300ms;
+    background-color: $first;
+
+    input {
+        border-color: $first;
+        border-radius: 0;
+    }
+
+    button {
+        border-radius: 0;
+    }
+
+    .primary-btn {
+        background-color: $first;
+        border: none;
+    }
+
+    .ReactCollapse--content {
+        padding: 10px;
+    }
+
+    .search__search-form {
+        margin: 1rem 0;
+    }
+
+    .top-nav__contacts {
+        color: #d5d5d5;
+        font-size: 1.8rem;
+        a {
+            color: #d5d5dd;
+        }
+
+        svg {
+            margin-right: 1rem;
+        }
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: wrap column;
+    }
+
+    .top-nav__functions {
+        text-align: center;
+        font-size: 1.9rem;
+        a {
+            color: #FFF;
+        }
+        svg {
+            margin-right: 1rem;
+        }
+    }
+}

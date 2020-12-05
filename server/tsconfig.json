@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "CommonJS",
+        "allowJs": true,
+        "moduleResolution": "Node",
+        "esModuleInterop": true,
+        "inlineSourceMap": true,
+        "resolveJsonModule": true,
+        "strict": true,
+        "alwaysStrict": true,
+        "noImplicitAny": true,
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./src/*"],
+            "~/*": ["./*"]
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules/**/*"]
+}

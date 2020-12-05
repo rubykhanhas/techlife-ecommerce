@@ -1,0 +1,29 @@
+@import '@/constants/import';
+@import '@/constants/color';
+
+.top-nav {
+    background-color: $fifth;
+
+    .row {
+        justify-content: space-between;
+    }
+    
+    svg {
+        margin-right: .5rem;
+    }
+    span {
+        margin-right: 1rem;
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+        &.active {
+            color: $second;
+        }
+    }
+
+    @include media-breakpoint-down(xs) {
+        display: none;        
+    }
+}

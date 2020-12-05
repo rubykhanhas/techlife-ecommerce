@@ -1,0 +1,37 @@
+
+.hot-deals {
+    position: relative;
+
+    box-shadow: 0 10px 30px rgba($color: #000000, $alpha: .2);
+    border-radius: 10px;
+
+    padding: 50px 30px 20px 30px;
+
+    &__title {
+        position: absolute;
+        top: 10px;
+        left: 30px;
+
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+
+    .slick-slider {
+        cursor: grab;
+
+        .slick-arrow {
+            position: absolute;
+            top: -25px;
+        }
+
+        span.slick-arrow.next-arrow {
+            left: auto;
+            right: 0;
+        }
+
+        span.slick-arrow.prev-arrow {
+            left: auto;
+            right: 30px;
+        }
+    }
+}

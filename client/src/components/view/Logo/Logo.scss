@@ -1,0 +1,9 @@
+@import '@/constants/color';
+.logo {
+    font-size: 4rem;
+    font-weight: 700;
+    color: $first;
+    a {
+        color: $first;
+    }
+}

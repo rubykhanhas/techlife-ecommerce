@@ -1,0 +1,23 @@
+.slick-arrow {
+    font-size: 3rem;
+    color: rgba($color: #000000, $alpha: .2);
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color .5s;
+
+    cursor: pointer;
+
+    &:hover {
+        color: rgba($color: #000000, $alpha: 1.0);
+    }
+
+    &.prev-arrow {
+        left: 20px;
+    }
+
+    &.next-arrow {
+        right: 20px;
+    }
+}

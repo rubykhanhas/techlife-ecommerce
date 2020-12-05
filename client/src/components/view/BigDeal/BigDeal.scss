@@ -1,0 +1,198 @@
+@import '@/constants/color';
+
+.big-deal {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    // 
+    width: 100%;
+    padding: 5px;
+    &__image {
+        max-width: 300px;
+        max-height: 300px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        //
+        width: 100%;
+        margin-top: 30px;
+        &__text, &__price {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+        }
+
+        &__text {
+            max-width: 65%;
+            font-size: 1.6rem;
+            h6 {
+                font-size: 1em;
+                font-weight: 300;
+                color: rgba($color: #000000, $alpha: .6);
+                text-transform: capitalize;
+            }
+
+            a {
+                // text-overflow: ellipsis;
+                // white-space: nowrap;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                //
+                font-size: 1.5em;
+                font-weight: 400;
+                color: rgba($color: #000000, $alpha: 1.0);
+                //
+                transition: color .2s linear;
+
+                &:hover,&:active {
+                    color: $second;
+                }
+            }
+        }
+
+        &__price {
+            font-size: 1.6rem;
+            span {
+                font-size: 1.6em;
+                font-weight: 600;
+                color: #df3b3b;
+            }
+            .big-deal__content__price--old {
+                font-size: 1.3em;
+                font-weight: 300;
+                color: rgba($color: #000000, $alpha: .7);
+                text-decoration: line-through;
+            }
+            
+        }
+    }
+
+    &__quantity {
+        width: 100%;
+        margin-top: 20px;
+        //
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        //
+        &__text {
+            width: 100%;
+            //
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                font-size: .9em;
+                font-weight: 300;
+            }
+            span {
+                font-size: .925em;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__timer {
+        width: 100%;
+        margin-top: 30px;
+        //
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__text {
+            h6 {
+                font-size: 1em;
+                font-weight: 500;
+            }
+            p {
+                font-size: .9em;
+                font-weight: 300;
+                color: rgba($color: #000, $alpha: .8);
+            }
+        }
+    }
+}
+
+.big-deal-skeleton {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    // 
+    width: 100%;
+    padding: 5px;
+    background-color: rgba($color: #d9d9d9, $alpha: .1);
+    border: .1px solid rgba($color: #d5d5d5, $alpha: .6);
+
+    &__image {
+        width: 200px;
+        height: 200px;
+        background-color: rgba($color: #d5d5d5, $alpha: .8);
+        border-radius: 50%; 
+    }
+    &__content {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        //
+        width: 100%;
+        margin-top: 30px;
+        &__text, &__price {
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+        }
+        &__text {
+            width: 65%;
+            height: 100%;
+            h6 {
+                height: 16px;
+                width: 100%;
+                margin: 5px 0;
+            }
+            a {
+                height: 20px;
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+        &__price {
+            width: 35px;
+            span {
+                height: 20px;
+                width: 100%
+            }
+        }
+    }
+    &__quantity {
+        margin: 5px 0;
+        background-color: rgba($color: #d5d5d5, $alpha: .8);
+        width: 100%;
+        height: 15px;
+    }
+    &__timer {
+        margin: 5px 0;
+        background-color: rgba($color: #d5d5d5, $alpha: .8);
+        width: 100%;
+        height: 25px;
+    }
+    span, p, h6, a {
+        background-color: rgba($color: #d5d5d5, $alpha: .8);
+    }
+}   

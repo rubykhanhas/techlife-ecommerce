@@ -1,0 +1,29 @@
+@import '@/constants/color';
+
+.product-sort {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: .9em;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba($color: #d5d5d5, $alpha: .5);
+
+    .count > span {
+        color: $second;
+        font-weight: 500;
+    }
+
+    .sort {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-by {
+            margin-left: 10px;
+            width: 185px;
+        }
+    }
+}

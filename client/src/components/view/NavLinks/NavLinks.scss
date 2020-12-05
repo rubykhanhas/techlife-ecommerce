@@ -1,0 +1,26 @@
+@import '@/constants/color';
+
+.nav-links {
+    display: flex;
+    flex-flow: wrap column;
+
+    a {
+        text-align: center;
+        border-bottom: .5px solid rgba($color: #000000, $alpha: .5);  
+        
+        padding: .5rem 0;
+
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: #FFF;
+
+        &:hover {
+            background-color: rgba($color: #FFF, $alpha: .9);
+            color: $first;
+        }
+        &.active {
+            background-color: rgba($color: #FFF, $alpha: .9);
+            color: $first;
+        }
+    }
+}

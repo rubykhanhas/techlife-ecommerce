@@ -1,0 +1,18 @@
+@import '@/constants/import';
+
+.search {
+    padding: 30px 0;
+
+    .row {
+        align-items: center;
+    }
+
+    .search2 {
+        @include media-breakpoint-down(xs) {
+            display: none;
+        }
+        @include media-breakpoint-down(sm) {
+            order: 2;
+        }
+    }
+}

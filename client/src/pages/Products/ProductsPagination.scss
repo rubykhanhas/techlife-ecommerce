@@ -1,0 +1,15 @@
+@import '@/constants/color';
+
+.product-pagination {
+    margin: 25px;
+    text-align: center;
+
+    & > nav {
+        display: inline-block;
+    }
+
+    button[aria-current="true"] {
+        background-color: rgba($color: $second, $alpha: .4);
+        color: #000;
+    }
+}

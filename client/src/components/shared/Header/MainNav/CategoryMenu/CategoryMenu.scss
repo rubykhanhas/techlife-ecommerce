@@ -1,0 +1,28 @@
+@import '@/constants/import';
+@import '@/constants/color';
+@import '@/components/view/PrimaryButton/PrimaryButton.scss';
+
+@import '~/node_modules/bootstrap/scss/dropdown';
+@import '~/node_modules/bootstrap/scss/mixins/caret';
+
+.main-nav__category-menu {
+
+    width: 100%;
+
+    .primary-btn {
+        font-size: 3rem;
+        font-weight: 500;
+
+        border-radius: 0;
+
+        background-color: $first;
+    }
+
+    .dropdown-item {
+        font-size: 2.5rem;
+        &.active, &:hover {
+            background-color: rgba($color: $second, $alpha: .5);
+        }
+    }
+
+}

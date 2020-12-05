@@ -1,0 +1,1 @@
+export type SelectOptions = {value: any, label: string}[];

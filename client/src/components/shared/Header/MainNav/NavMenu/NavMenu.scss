@@ -1,0 +1,17 @@
+@import '@/constants/color';
+@import '@/constants/import';
+
+.main-nav__nav-menu {
+    button {
+        font-size: 3rem;
+        font-weight: 500;
+    
+        border-radius: 0;
+    
+        background-color: $first;
+    }
+
+    .ReactCollapse--collapse {
+        transition: height 500ms;
+    }
+}

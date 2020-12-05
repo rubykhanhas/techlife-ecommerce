@@ -1,0 +1,94 @@
+@import '@/constants/color';
+.cart-item {
+
+    border-bottom: 1px solid rgba($color: #d5d5d5, $alpha: .8);
+    border-collapse: collapse;
+
+    td {
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .display {
+        text-align: left;
+        padding: 15px;
+
+        * {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        img {
+            max-width: 100px;
+            max-height: 100px;
+            margin-right: 20px;
+        }
+
+        a {
+            font-weight: 400;
+            font-size: 1.1em;
+
+            max-width: 300px;
+            overflow: hidden;
+            display: -webkit-inline-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+
+            transition: color .3s linear;
+            &:hover, &:active {
+                color: rgba($color: $second, $alpha: .8);
+            }
+        }
+    }
+
+    .quantity {
+
+        &>div {
+            width: 150px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+    }
+
+    .color {
+        font-weight: 400;
+        text-transform: capitalize;
+
+        &>span {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 .5em;
+
+            width: 1.5em;
+            height: 1.5em;
+
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px rgba($color: #d5d5d5, $alpha: 1);
+        }
+    }
+
+    .price,
+    .total {
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    .remove>span {
+
+        cursor: pointer;
+
+        &:hover,
+        &:active {
+            &::before {
+                color: rgba($color: red, $alpha: .6)
+            }
+        }
+
+        &::before {
+            content: "\2715";
+            color: rgba($color: #000000, $alpha: .6);
+            font-size: 1.5em;
+            transition: color .2s linear;
+        }
+    }
+}

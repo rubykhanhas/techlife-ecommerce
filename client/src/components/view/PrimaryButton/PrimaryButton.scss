@@ -1,0 +1,13 @@
+@import '@/constants/color';
+.primary-btn {
+    background-color: $second;
+    color: #FFF;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba($color: $second, $alpha: .8);
+    }
+}

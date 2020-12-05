@@ -1,0 +1,56 @@
+@import '@/constants/color';
+
+
+.slider-range {
+    width: 100%;
+
+    label {
+        font-size: 1.2em;
+        margin-bottom: .5em;
+        display: block;
+        text-transform: capitalize;
+    }
+
+    .input-range {
+        margin: 3em auto;
+
+        &__slider {
+            top: -.2em;
+            background: $first;
+            border: none;
+            height: 1em;
+            width: 1em;
+        }
+
+        &__label {
+            top: -2.1em;
+            font-size: 1.1em;
+
+            &--value>span {
+                background: $first;
+                color: white;
+                font-size: 1em;
+                padding: 2px 5px;
+                border-radius: 5px;
+            }
+
+            &--min,
+            &--max {
+                span {
+                    bottom: -2.5em;
+                    font-size: 1.3em;
+                    color: #888;
+                    left: 0;
+                }
+            }
+
+            &--max>span {
+                left: 50%;
+            }
+
+            &--min>span {
+                left: -50%;
+            }
+        }
+    }
+}

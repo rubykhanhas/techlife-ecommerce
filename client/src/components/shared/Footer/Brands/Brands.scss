@@ -1,0 +1,24 @@
+.brands {
+
+    margin: 20px auto;
+
+    .slick-slider {
+        box-shadow: 0 0 10px 1px rgba($color: #d9d9d9, $alpha: .8);
+        background-color: #FFF;
+        padding: 15px 50px;
+    }
+
+    &__logo-container {
+
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        
+        cursor: grab;
+
+        img {
+            height: 100px;
+            width: 100px;
+        }
+    }
+}

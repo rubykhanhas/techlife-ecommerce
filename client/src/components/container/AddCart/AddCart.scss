@@ -1,0 +1,32 @@
+@import '@/constants/color';
+.addCart {
+    border-radius: 10px;
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+
+    padding: 0 1em;
+    height: 100%;
+
+    color: #FFF;
+    font-size: 1.1em;
+    font-weight: 500;
+
+    text-align: center;
+    background-color: rgba($color: $second, $alpha: 1);
+
+    &:hover {
+        background-color: rgba($color: $second, $alpha: .8);
+    }
+
+    &:active,
+    &:focus {
+        border: .5px solid #FFF;
+        box-shadow: 1px 1px 1px 2px rgba($color: $second, $alpha: .3), -1px -1px 1px 2px rgba($color: $second, $alpha: .3);
+    }
+}
+
+.btn {
+    transition: border .2s linear, box-shadow .2s linear, background-color .2s linear;
+    cursor: pointer;
+}

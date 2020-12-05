@@ -1,0 +1,14 @@
+
+@keyframes shimmer-loading {
+    0% {
+        transform: skewX(-30deg) translateX(-150%);
+    }
+
+    50% {
+        transform: skewX(-30deg) translateX(60%);
+    }
+
+    100% {
+        transform: skewX(-30deg) translateX(150%);
+    }
+}

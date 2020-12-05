@@ -1,0 +1,68 @@
+@import '@/constants/color';
+@import '@/constants/import';
+
+.main-nav {
+
+    box-shadow: none;
+    
+    .container {
+        background-color: $first;
+    }
+
+    .row {
+        justify-content: space-between;
+
+        .main-nav3 {
+            display: block;
+        }
+
+        .main-nav2 {
+            display: none;
+
+            .nav-links {
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+
+                a {
+                    padding: .25em .5em;
+                    color: rgba($color: #000000, $alpha: .6);
+                    border: none;
+
+                    &:hover, &.active {
+                        color: rgba($color: $first, $alpha: .8);
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-up(md){
+        
+        box-shadow: 0 0 10px .5px rgba($color: #000000, $alpha: .2);
+        
+        .container {
+            background-color: #FFF;
+        }
+
+        .row {
+            justify-content: space-between;
+            .main-nav3 {
+                display: none;
+            }
+    
+            .main-nav2 {
+                display: block;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xs){
+        .primary-btn {
+            font-size: 2.2rem;
+        }
+        a {
+            font-size: 2rem
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@import '/node_modules/animate.css/source/fading_entrances/fadeInRightBig.css';
+
+.tabline{
+
+    margin: 20px auto;
+
+    &__tabs {
+        display: flex;
+        flex-flow: nowrap row;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .tab {
+            cursor: pointer;
+        }
+    }
+
+    &__line {
+        position: relative;
+        height: 1px;
+        width: 100%;
+        margin-top: .5em;
+
+        background-color: #d5d5d5;
+
+        span {
+            display: block;
+            position: absolute;
+            left: 17.5%;
+            top: -1px;
+
+            width: 10%;
+            height: 3px;
+
+            background-color: royalblue;
+            transition: left .2s linear, width 1s linear;
+        }
+    }
+
+    &__content {    
+        overflow: hidden;
+        & > * {
+            animation: fadeInRightBig .5s linear backwards;
+        }
+    }
+}

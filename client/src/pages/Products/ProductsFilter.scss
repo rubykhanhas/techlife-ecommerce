@@ -1,0 +1,89 @@
+@import '@/constants/import';
+@import '@/constants/color';
+
+.product-filter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(sm) {
+        flex-direction: column;
+
+        &>div {
+            align-items: flex-start;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        flex-direction: column;
+    }
+
+    &>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .filter-unit {
+
+        .title {
+            font-weight: 500;
+            font-size: 1.2em;
+            margin-bottom: 1.2em;
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                cursor: pointer;
+                text-transform: capitalize;
+                font-weight: 300;
+                color: rgba($color: #000000, $alpha: .6);
+                margin-bottom: .5em;
+
+                &.active {
+                    color: rgba($color: $first, $alpha: .8);
+                }
+            }
+
+            @include media-breakpoint-down(lg){
+                max-height: 100px;
+                overflow-y: auto;
+            }
+        }
+    }
+
+    .slider-range {
+        flex-basis: 50%;
+        padding: 0 40px;
+
+        label {
+            font-weight: 500;
+            font-size: 1.2em;
+        }
+
+        .input-range__label-container::before {
+            content: "$";
+        }
+
+        @include media-breakpoint-down(sm) {
+            label {
+                margin-right: -38.5px;
+            }
+            padding-right: 77px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            label {
+                margin-right: -27.5px;
+            }
+            padding-right: 55px;
+        }
+    }
+}
